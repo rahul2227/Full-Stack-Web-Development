@@ -2,13 +2,19 @@
 <html>
 <head>
 	<title>Input Detals</title>
-	<script type="text/javascript">
-		
-	</script>
 </head>
 <body>
-	firstname : <input type="text" placeholder="firstname" ><br>
-	Lastname: <input type="text" placeholder="Lastname"><br>
-	<input type="submit" name="go">
+	firstname : <input id="First" type="text" placeholder="firstname" ><br>
+	Lastname: <input id="Last" type="text" placeholder="Lastname"><br>
+	<input id="btn" type="submit" name="go">
+	<script type="text/javascript">
+		document.getElementById('btn').onclick = 
+		function(){
+			firstname = document.getElementById('First').value;
+			Lastname = document.getElementById('Last').value;
+
+			console.log(firstname +' '+Lastname);
+		}
+	</script>
 </body>
 </html>
